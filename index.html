@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <img class="header-imagen" src="img/Logo.png" alt="logo alura">
+    </header>
+    <main class="presentacion">
+        <section class="presentacion-contenido">
+            <p class="presentacion-contenido-texto">Ingrese el texto aqui</p>
+            <input id="texto-encryptar" placeholder="La mejor manera de predecir el futuro es implementarlo."></input>
+            <div class="presentacion-contenido-enlaces">
+                <p>
+                    <img src="img/Group.png" alt="Icono de mensaje no encontrado">
+                    Solo letras minúsculas y sin acentos
+                </p>
+                <button onclick="encryptador()" class="presentacion-contenido-enlaces-boton1">Encriptador</button>
+                <button onclick="descryptador()" class="presentacion-contenido-enlaces-boton2">Descriptador</button>
+            </div>
+        </section>
+        <section class="presentacion-mensajes">
+            <div class="presentacion-mensajes-mostrar">
+                <img id= 'muñeco-img' src="img/Muñeco.png" alt="Muñeco de ejemplo">
+                <p class="texto-importante-mostrar">Ningún mensaje fue encontrado</p>
+                <span class="texto-no-importante-mostrar">Ingresa el texto que desees encriptar o desencriptar</span>
+                <button onclick="copiarTexto()" class="boton-copiar" style="display: none;">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <!--datos del creador-->
+                
+                <p>&copy; Dana Angellotti<span>-</span>2024</p>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>
